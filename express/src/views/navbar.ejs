@@ -1,0 +1,60 @@
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+     *{
+      margin: 0;
+      padding: 0;
+      font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+     }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        width: 100;
+      }
+      .navbar .brand {
+        color: #fff;
+        font-size: 1.5em;
+        text-decoration: none;
+      }
+      .navbar .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+      }
+      .navbar .nav-links li {
+        display: inline;
+      }
+      .navbar .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 3px;
+        transition: 0.3s;
+      }
+      .navbar .nav-links a:hover {
+        background-color: #575757;
+
+        border-radius: 8px;
+        transition: 0.8s linear;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="brand">Form validation</a>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/login">Login</a></li>
+        <li><a href="/signup">Signup</a></li>
+      </ul>
+    </nav>
+
+    
+  </body>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to Our Website</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        overflow: hidden;
+      }
+      .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      p {
+        line-height: 1.6;
+      }
+      .links {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .links a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+      .links a:hover {
+        text-decoration: underline;
+      }
+      .description {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <%-include("./navbar.ejs") %>
+    <div class="container">
+      <h1>Welcome to Our Website</h1>
+      <div class="description">
+        <p>
+          Our website offers a secure and user-friendly experience for managing
+          your account. We employ advanced technologies such as bcrypt for
+          secure password hashing and JWT (JSON Web Tokens) for safe and
+          efficient authentication.
+        </p>
+        <p>
+          When you sign up, your password is securely hashed using bcrypt,
+          ensuring that even in the unlikely event of a data breach, your
+          password remains protected. During login, JWT tokens are used to
+          maintain a secure session, providing you with a seamless and secure
+          browsing experience.
+        </p>
+      </div>
+      <div class="links">
+        <a href="/signup">Sign Up</a>
+        <a href="/login">Login</a>
+      </div>
+    </div>
+    <%-include("./footer.ejs") %>
+  </body>
+</html>

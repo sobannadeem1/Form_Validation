@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      .about-container {
+        background-color: #fff;
+        padding: 40px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        max-width: 600px;
+        text-align: center;
+        min-height: 72vh;
+        margin: auto;
+      }
+      .about-container h1 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+      }
+      .about-container p {
+        font-size: 1.2em;
+        line-height: 1.6;
+        margin-bottom: 20px;
+      }
+      .about-container .email {
+        font-size: 1.2em;
+        color: #333;
+        text-decoration: none;
+        background-color: #eee;
+        padding: 10px;
+        border-radius: 5px;
+        display: inline-block;
+        transition: background 0.3s;
+      }
+      .about-container .email:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <%-include("./navbar.ejs") %>
+    <div class="about-container">
+      <h1>About Us</h1>
+      <p>
+        Welcome! My name is Soban Nadeem, and I am a full-stack software
+        engineer with a passion for building dynamic and responsive web
+        applications. I specialize in both frontend and backend development,
+        ensuring seamless user experiences and robust functionality.
+      </p>
+      <p>If you would like to get in touch, feel free to email me at:</p>
+      <a href="mailto:soban.nadeem@example.com" class="email"
+        >soban.nadeem@example.com</a
+      >
+    </div>
+    <%-include("./footer.ejs") %>
+  </body>
+</html>
